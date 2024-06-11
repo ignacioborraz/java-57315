@@ -1,0 +1,12 @@
+
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á·#8òíé…ı1J$bdbb0da3-3f1d-4197-9ced-88f5a53c3bff
+|
+java:S1854"9Remove this useless assignment to local variable "stela".(í®à€8Î—ï…ı1J$0b68010b-7469-4bae-aea8-085facdf2336
+m	java:S106"+Replace this use of System.out by a logger.(ËÀ—È8‘îé…ı1J$e558403f-6117-41e0-bae7-f87f14ebaf15
+m	java:S106"+Replace this use of System.out by a logger.(Èú£Ì8•îé…ı1J$184d9162-6e8e-4243-8c6a-e906313be7a5
+m	java:S106"+Replace this use of System.out by a logger.(Èú£Ì8—îé…ı1J$83d0c3ce-4250-4dbb-bf37-fa68c356fbd9
+m	java:S106"+Replace this use of System.out by a logger.(Èú£Ì8šîé…ı1J$fc393631-9317-4f6c-af5f-46d3e562539f
+m	java:S106"+Replace this use of System.out by a logger.(Èú£Ì8›îé…ı1J$e6cf4758-b065-4b27-b08b-97575cf10f73
+m
+java:S1481"*Remove this unused "stela" local variable.(í®à€8à—ï…ı1J$54cd6e52-76b4-438f-bb65-40b556067e44
+}	java:S125 "<This block of commented-out lines of code should be removed.(µèÈ8»€î…ı1J$54296935-bf61-4712-873d-46d4148486b6

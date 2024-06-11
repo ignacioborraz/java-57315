@@ -1,0 +1,15 @@
+
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ĞéŸ;8ùûÄ‚ş1J$5f996739-2d0f-4d1c-ba2b-8673627d99dd
+ˆ	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(Üß´8úûÄ‚ş1J$383ad666-aa8c-47ad-9b97-813028a37b8b
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Øòâ¹8ÃÆÆ‚ş1J$e4cde98c-f8e1-49e2-a7c1-aadd9a8fdac3
+¤
+java:S1488"\Immediately throw this expression instead of assigning it to the temporary variable "error".(Œ¯Äøÿÿÿÿ8ıûÄ‚ş1J$a18276b0-70ea-48d6-b5f5-4639721c3ffe
+„
+java:S4973"<Strings and Boxed types should be compared using "equals()".(êú±İûÿÿÿÿ8…üÄ‚ş1J$63b01552-2101-4aae-be37-29826246c2e0
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚»…Ïùÿÿÿÿ8†üÄ‚ş1J$23a0dbad-2727-4630-91e4-fb5377429db7
+m	java:S106"+Replace this use of System.out by a logger.(³àøÙ8üÄ‚ş1J$e10ed4b9-89f5-4580-bf20-642204598d39
+m	java:S106"+Replace this use of System.out by a logger.(²Âæã8üÄ‚ş1J$759c6871-0706-44d1-bc6f-33a7cbbe8e75
+r	java:S106"+Replace this use of System.out by a logger.(«”´çÿÿÿÿÿ8¢üÄ‚ş1J$3f83d16d-57c4-4a6a-beef-83b450bd7615
+ƒ	java:S125."<This block of commented-out lines of code should be removed.(¹¶›ıÿÿÿÿ8Ù†Ç‚ş1J$8c678734-302d-44ef-80a3-c666ee0bf7e1
+ƒ	java:S1251"<This block of commented-out lines of code should be removed.(í¹üÍúÿÿÿÿ8ËœÇ‚ş1J$e9878717-57b3-4801-9569-8451a1d67a3e
+r	java:S1066"+Replace this use of System.out by a logger.(Ú§ÈÖúÿÿÿÿ8—§Ê‚ş1J$155d6f89-0156-4282-a67b-0a651669e67e
