@@ -63,3 +63,15 @@ U
 %src/main/java/abm/GestorProducto.java,a/d/adc2cefafaf3cf2927f79f45d39b142238ec6652
 K
 src/main/java/abm/Main.java,e/2/e28401f92b53bd99c40d41951590d8b92303b916
+V
+&src/main/java/java_08_jpa/Cliente.java,1/2/12701d0c667ac3cf4d2337ad11679d10e15697be
+]
+-src/main/java/java_08_jpa/GestorGenerico.java,0/b/0b079a5bad3e45cc90d669c9c52557b82bb1eef1
+\
+,src/main/java/java_08_jpa/GestorCliente.java,0/2/02607c8ca79073377092d9e23257818e62dfafba
+W
+'src/main/java/java_08_jpa/Producto.java,1/2/1288c782dbc75e45edef37c5b28f57acb59a9538
+]
+-src/main/java/java_08_jpa/GestorProducto.java,a/1/a1deda74824e1467fff4449f9ff7a7ab3277a281
+V
+&src/main/java/java_08_jpa/Pruebas.java,a/b/ab11e080ec5d74a5585ba3a4853a40870f07a833
