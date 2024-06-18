@@ -85,3 +85,15 @@ W
 .src/main/java/abm/managers/InvoiceManager.java,4/4/442fe29d9d33af1c952390384a55e3606ebf5d64
 _
 /src/main/java/abm/managers/InvoicesManager.java,6/5/657e667d0700398aef0b08e2cd814d2d3f3c0ab8
+S
+#src/main/java/java_09_workshop.java,4/b/4b6f96df0f82034f9ba2a0e7ce1c57bbc5a292c8
+\
+,src/main/java/java_09_workshop/entities.java,1/4/14e5d5980849e1d9b25077cec15e38dbfc359d83
+c
+3src/main/java/java_09_workshop/entities/Client.java,6/9/69005ceecf4a67a33b00b8512727dc10bba0afa2
+d
+4src/main/java/java_09_workshop/entities/Product.java,9/d/9d2d6fea8b4d06c151a7b8b437062401d5efbcb8
+a
+1src/main/java/java_09_workshop/entities/Cart.java,e/2/e2c13e93c7af55acd69237dc566f225b326a95d5
+d
+4src/main/java/java_09_workshop/entities/Invoice.java,a/b/abf785ade51adf9dd092ff22e247f7aa40bc5dfd
