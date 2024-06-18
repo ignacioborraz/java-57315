@@ -1,0 +1,14 @@
+
+¡
+java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "clients".(ÀŞ’(8÷Œè‚2J$1b582e2d-2e5b-4012-8c3e-bcd9cebeddf7
+¦
+java:S1488,"^Immediately return this expression instead of assigning it to the temporary variable "client".(»êı·ùÿÿÿÿ8øŒè‚2J$b1fc5634-1910-4b62-b4be-13e341f7b764
+r	java:S106"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8…Œè‚2J$bc12adb9-2db7-4481-9e67-3cc4d3345fa3
+x
+java:S1481"0Remove this unused "transaction" local variable.(ÿ¹¶Æÿÿÿÿÿ8†Œè‚2J$9c262dcb-ad52-4923-95f1-bc0840574434
+r	java:S106!"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8‡Œè‚2J$8df32d5e-af8e-4185-9e8c-3409a56a99e5
+n
+java:S1168""+Return an empty collection instead of null.(¥¹ï8’Êè‚2J$7b831f13-510a-4bee-923e-3fc3b2b0f702
+x
+java:S1481)"0Remove this unused "transaction" local variable.(ÿ¹¶Æÿÿÿÿÿ8ˆŒè‚2J$121abdc3-0faa-4677-a6d2-ed4370a103d4
+r	java:S106/"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8‰Œè‚2J$5259460e-79c9-4741-8572-19bf3ef49fab
