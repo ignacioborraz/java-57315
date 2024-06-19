@@ -1,8 +1,8 @@
-package abm.managers;
+package java_09_workshop.managers;
 
 import jakarta.persistence.*;
 
-public class BaseProvider {
+public class Manager {
 
     private static final String PERSISTENCE_UNIT_NAME = "abmPU";
     private static EntityManagerFactory factory;

@@ -97,3 +97,13 @@ a
 1src/main/java/java_09_workshop/entities/Cart.java,e/2/e2c13e93c7af55acd69237dc566f225b326a95d5
 d
 4src/main/java/java_09_workshop/entities/Invoice.java,a/b/abf785ade51adf9dd092ff22e247f7aa40bc5dfd
+d
+4src/main/java/java_09_workshop/managers/Manager.java,f/3/f3007752bd63b69858bfe20c051accc5ec2f4a9f
+k
+;src/main/java/java_09_workshop/managers/ClientsManager.java,9/e/9e01262e75b6e46961e4f0a10862fc62cd73cc0d
+l
+<src/main/java/java_09_workshop/managers/ProductsManager.java,2/5/254db9ef2a73af7d009a8f6d992cd6c1d478205d
+X
+(src/main/java/java_09_workshop/Main.java,5/0/508fb8945c423e964c689125a9e35c6e489d7fdb
+i
+9src/main/java/java_09_workshop/managers/CartsManager.java,1/c/1c026e11af7bb5bdebd70aa9fd838e4adea04f37

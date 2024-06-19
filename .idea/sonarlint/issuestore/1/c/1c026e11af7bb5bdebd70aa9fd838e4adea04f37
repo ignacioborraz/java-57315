@@ -1,0 +1,6 @@
+
+x
+java:S1143,"5Remove this return statement from this finally block.(Ñý”ç8¡Ê¨î‚2J$7c52600e-e001-4057-8aba-ff362876a831
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(§ò£©8×€¨î‚2J$3ce9b08e-ea6d-4480-a67e-489329a660e2
+r	java:S106"+Replace this use of System.out by a logger.(¨¶ÑÍþÿÿÿÿ8ù€¨î‚2J$634ebd9a-df65-4c65-9387-44df3d8c53b6
+r	java:S106)"+Replace this use of System.out by a logger.(¨¶ÑÍþÿÿÿÿ8þ€¨î‚2J$cd25d402-aa39-47c6-bc3a-80ed5cc843b8
