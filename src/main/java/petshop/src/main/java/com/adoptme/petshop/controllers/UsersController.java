@@ -7,23 +7,18 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @RestController
-@RequestMapping("api/v1/users")
+@RequestMapping("api/users")
 public class UsersController {
 
     @Autowired private UsersService service;
 
     @PostMapping
-    public ResponseEntity<User> create(@RequestBody User data) {
+    public ResponseEntity<User> createPerson(@RequestBody User user) {
         try {
-            User user = service.save(data);
-            return new ResponseEntity<>(user, HttpStatus.CREATED);
-            //la respuesta por defecto de spring
-            //va a devolver al usuario recien creado
-            //y va a tener el codigo de estado correspondiente a la creacion ()
+            return new ResponseEntity<>(service.save(user), HttpStatus.CREATED);
         } catch (Exception e) {
             System.out.println(e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
@@ -31,13 +26,48 @@ public class UsersController {
     }
 
     @GetMapping
-    public ResponseEntity<List<User>> read() {
+    public ResponseEntity<List<User>> getAllPersons() {
         try {
-            List<User> users = service.read();
-            return ResponseEntity.ok(users);
-            //forma correcta de responder una lectura (200)
-            //condicionar que pasa si users NO TIENE USUARIOS
-            //método isEmpty()
+            List<User> users = service.findAll();
+            if (!users.isEmpty()) {
+                return ResponseEntity.ok(users);
+            } else {
+                return ResponseEntity.noContent().build();
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Object> getUserById(@PathVariable Long id) {
+        try {
+            Optional<User> user = service.findById(id);
+            if (user.isPresent()) {
+                return ResponseEntity.ok(user.get());
+            } else {
+                return ResponseEntity.notFound().build();
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User data) {
+        try {
+            Optional<User> optionalUser = service.findById(id);
+            if (optionalUser.isPresent()) {
+                User user = optionalUser.get();
+                user.setName(data.getName());
+                user.setEmail(data.getEmail());
+                user.setPets(user.getPets());
+                return ResponseEntity.ok(service.save(user));
+            } else {
+                return ResponseEntity.notFound().build();
+            }
         } catch (Exception e) {
             System.out.println(e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
@@ -45,12 +75,15 @@ public class UsersController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<> destroy(@PathVariable Long id) {
+    public ResponseEntity<Map<String, Boolean>> deleteUser(@PathVariable Long id) {
         try {
-            service.deleteOne(id);
-            //forma correcta de responder una lectura (200)
-            //condicionar que pasa si no existe ese usuario con ese id
-            return ResponseEntity.ok().build();
+            Optional<User> optionalUser = service.findById(id);
+            if (optionalUser.isPresent()) {
+                service.deleteById(id);
+                return ResponseEntity.ok().build();
+            } else {
+                return ResponseEntity.notFound().build();
+            }
         } catch (Exception e) {
             System.out.println(e);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();

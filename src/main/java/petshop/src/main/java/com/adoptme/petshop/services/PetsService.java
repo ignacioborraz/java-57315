@@ -13,46 +13,39 @@ import java.util.Optional;
 @Service
 public class PetsService {
 
-    @Autowired private PetsRepository repository;
     @Autowired private UsersRepository usersRepository;
+    @Autowired private PetsRepository petsRepository;
+
+    public List<Pet> findAll() {
+        return petsRepository.findAll();
+    }
+
+    public Optional<Pet> findById(Long id) {
+        return petsRepository.findById(id);
+    }
 
     public Pet save(Pet pet) {
-        return repository.save(pet);
+        return petsRepository.save(pet);
     }
 
-    public List<Pet> read() {
-        return repository.findAll();
-    }
-
-    public Optional<Pet> readOne(Long id) {
-        return repository.findById(id);
-    }
-
-    public void deleteOne(Long id) {
-        repository.deleteById(id);
+    public void deleteById(Long id) {
+        petsRepository.deleteById(id);
     }
 
     public Pet adoptPet(Long petId, Long userId) throws Exception {
-        Optional<Pet> pet = repository.findById(petId);
-        //el médoto findById del repositorio de JPA devuelve siempre
-        //un opcional de algo
-        //la mascota puede existir o no existir
-        //y la variable pet es de tipo "optional Pet" QUE NO ES LO MISMO que Pet
+        Optional<Pet> pet = petsRepository.findById(petId);
         if (!pet.isPresent()) {
-            throw new Exception("PET NOT FOUND");
+            throw new Exception("Pet not found with id: " + petId);
         }
         Optional<User> user = usersRepository.findById(userId);
         if (!user.isPresent()) {
-            throw new Exception("USER NOT FOUND");
+            throw new Exception("User not found with id: " + petId);
         }
-        //luego de encontrar la mascota y el usuario
-        //obtengo los correspondientes datos con el método get()
         Pet foundPet = pet.get();
-        //para transformar u obtener de la "mascota opcional" la mascota encontrada
-        //voy a utilizar el método get()
         User foundUser = user.get();
         foundPet.setOwner(foundUser);
-        return repository.save(foundPet);
+        petsRepository.save(foundPet);
+        return foundPet;
     }
 
 }

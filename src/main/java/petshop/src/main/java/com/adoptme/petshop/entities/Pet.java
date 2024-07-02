@@ -3,6 +3,8 @@ package com.adoptme.petshop.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity @Table(name = "pets")
 @NoArgsConstructor @ToString @EqualsAndHashCode
 public class Pet {
