@@ -1,10 +1,0 @@
-
-ª
-java:S1488:"gImmediately return this expression instead of assigning it to the temporary variable "invoicesDetails".(şôÚî8î–¢è‚2J$ea81a4de-e3c2-49e6-835a-efddd4adb4b5
-r	java:S106"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8ô–¢è‚2J$49018d15-1bd7-489c-be01-ce3e7630fac8
-r	java:S1060"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8õ–¢è‚2J$b5edfb01-88d4-4555-916d-f5a7ca5c96b8
-x
-java:S14817"0Remove this unused "transaction" local variable.(ÿ¹¶Æÿÿÿÿÿ8ö–¢è‚2J$862c24f2-f218-4133-9362-96e213094965
-r	java:S106?"+Replace this use of System.out by a logger.(¨¶ÑÍşÿÿÿÿ8÷–¢è‚2J$ebce0383-f176-42ac-a61d-cbd33231921f
-n
-java:S1168@"+Return an empty collection instead of null.(¥¹ï8ĞŠªè‚2J$30063784-cdc4-49aa-b990-3ace8203863a
