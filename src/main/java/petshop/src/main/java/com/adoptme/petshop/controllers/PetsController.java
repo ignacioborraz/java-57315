@@ -1,7 +1,6 @@
 package com.adoptme.petshop.controllers;
 
 import com.adoptme.petshop.entities.Pet;
-import com.adoptme.petshop.entities.User;
 import com.adoptme.petshop.services.PetsService;
 import com.adoptme.petshop.services.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 @RestController
-@RequestMapping("api/pets")
+@RequestMapping("api/v1/pets")
 public class PetsController {
 
     @Autowired private PetsService service;

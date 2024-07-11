@@ -1,7 +1,7 @@
 package com.adoptme.petshop.controllers;
 
 import com.adoptme.petshop.entities.User;
-import com.adoptme.petshop.services.rest.ExternalApi;
+import com.adoptme.petshop.services.ExternalUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation .*;
 
 import java.util .*;
 
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 @RestController
-@RequestMapping("api/externals")
+@RequestMapping("api/ext/users")
 public class ExternalsController {
 
-    @Autowired private ExternalApi service;
+    @Autowired private ExternalUser service;
 
         @PostMapping
         public ResponseEntity<User> saveExt(@RequestBody User user) {

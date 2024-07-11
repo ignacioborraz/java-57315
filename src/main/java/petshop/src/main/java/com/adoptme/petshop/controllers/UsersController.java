@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 @RestController
-@RequestMapping("api/users")
+@RequestMapping("api/v1/users")
 public class UsersController {
 
     @Autowired private UsersService service;
